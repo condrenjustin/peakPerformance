@@ -36,6 +36,16 @@
 	 21. Media Query
 */
 
+#content-desktop {display: block;}
+#content-mobile {display: none;}
+
+@media screen and (max-width: 768px) {
+
+#content-desktop {display: none;}
+#content-mobile {display: block;}
+
+}
+
 
 /* ==================================================== */
 /* 01. Global Content Styles                            */
@@ -2145,7 +2155,7 @@ footer {
     margin: 200px 0 ;
 }
 .our-service-area img {
-    width: 100%;
+    width: max-width;
 }
 .quick-contact-box {
     width: 97%;
